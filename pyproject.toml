@@ -1,0 +1,53 @@
+[project]
+name = "bilibili-videoread-mcp"
+version = "0.2.0"
+description = "BiliBili_VideoRead_MCP — Bilibili 视频字幕/弹幕/评论提取 MCP Server，扫码登录，输出结构化 Markdown"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "VideoRead" }]
+keywords = ["bilibili", "mcp", "subtitle", "danmaku", "comment", "markdown"]
+license = { text = "MIT" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "mcp>=1.1.0,<2.0.0",
+    "httpx>=0.27.0",
+    "segno>=1.6.0",
+]
+
+[project.urls]
+Repository = "https://github.com/Yotsuki2213/BiliBili_VideoRead_MCP"
+
+[project.scripts]
+videoread = "videoread_mcp.cli:main"
+videoread-mcp = "videoread_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/videoread_mcp"]
+
+[tool.uv]
+dev-dependencies = [
+    "pyright>=1.1.389",
+    "ruff>=0.7.3",
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.21.0",
+    "respx>=0.21.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+markers = [
+    "integration: 需要真实网络/登录态的集成测试（默认跳过）",
+]
