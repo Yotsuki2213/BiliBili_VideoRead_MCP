@@ -71,7 +71,7 @@ python -m videoread_mcp login
 
 配置完成 → 重启客户端 → 对话里直接丢链接：
 
-> 帮我总结下这个视频讲了啥：https://www.bilibili.com/video/BV1GJ411x7h7
+> 帮我总结下这个视频讲了啥：[https://www.bilibili.com/video/BV1GJ411x7h7]
 > 顺便看看评论区都在说啥
 
 AI 自动调 `extract_bilibili_video` / `extract_bilibili_comments`，秒出内容。
@@ -157,7 +157,7 @@ BiliBili_VideoRead_MCP/
 7. **不构成建议**：本项目产出的任何内容均不构成投资、理财、法律或其他专业建议；引用他人内容不代表赞同其观点。
 8. **风险自担条款**：使用即视为同意以上全部条款。如果你所在地区或你的使用场景不允许此类工具，请**立即停止使用并删除本项目**。
 
-**投资有风险，理财需谨慎；看视频一时爽，一直看一直爽 🫡**
+**看视频一时爽，一直看一直爽 🫡**
 
 ---
 
