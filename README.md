@@ -11,7 +11,7 @@
 ### 🤝 友情链接 / SUPPORT
 
 - 🎯 **OpenCode Go** — opencode 轻量订阅（$10/月）：<https://opencode.ai/go?ref=G9NS3SGZMT>
-- ☁️ **良心云** — 高性价比云主机：<https://xn--9kqz23b19z.com/#/register?code=LBcBtWRW>
+- ☁️ **良心云** — 高性价比稳定机场：<https://xn--9kqz23b19z.com/#/register?code=LBcBtWRW>
 
 通过邀请码注册，作者能获得返利，维护更新更有动力 🫡
 
