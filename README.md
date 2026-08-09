@@ -7,6 +7,14 @@
 > 🚫 **告别 F12 手抄 Cookie**：本项目用 B 站官方扫码登录，终端打码、手机一扫即自动登录；约 30 天过期后重扫一次，全程免维护、无需重启会话。
 
 请给个 ⭐ Star 支持一下，作者会更有动力更新和维护！
+
+### 🤝 友情链接 / SUPPORT
+
+- 🎯 **OpenCode Go** — opencode 轻量订阅（$10/月）：<https://opencode.ai/go?ref=G9NS3SGZMT>
+- ☁️ **良心云** — 高性价比云主机：<https://xn--9kqz23b19z.com/#/register?code=LBcBtWRW>
+
+通过邀请码注册，作者能获得返利，维护更新更有动力 🫡
+
 ---
 
 ## ✨ 功能介绍
