@@ -10,8 +10,8 @@
 
 ### 🤝 友情链接 / SUPPORT
 
-- 🎯 **OpenCode Go** — opencode 轻量订阅（$10/月）：<https://opencode.ai/go?ref=G9NS3SGZMT>
-- ☁️ **良心云** — 高性价比稳定机场：<https://xn--9kqz23b19z.com/#/register?code=LBcBtWRW>
+- 🎯 **西部数据** — 作者本人在用的超稳定机场：<[https://wd-gold.net/aff.php?aff=17297](https://wd-gold.net/aff.php?aff=17297)>
+- ☁️ **良心云** — 高性价比机场：<https://xn--9kqz23b19z.com/#/register?code=LBcBtWRW>
 
 通过邀请码注册，作者能获得返利，维护更新更有动力 🫡
 
