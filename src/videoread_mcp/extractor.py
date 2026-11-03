@@ -91,12 +91,25 @@ def _parse_pages(view: dict[str, Any]) -> list[dict[str, Any]]:
 
 
 def fetch_view(bvid: str, client: httpx.Client | None = None) -> dict[str, Any]:
-    """获取视频 view 数据（无需登录）。"""
-    resp = (client or httpx.Client(timeout=_TIMEOUT)).get(
-        URL_VIEW, params={"bvid": bvid}, headers=auth.DEFAULT_HEADERS
-    )
-    resp.raise_for_status()
-    data = resp.json()
+    """获取视频 view 数据。
+
+    已登录时带上登录 Cookie：原版不带 Cookie 的请求在受限出口 IP
+    下会被 B 站返回 -412「request was banned」，带 Cookie 后可正常返回。
+    未登录时仍按原样请求，不强制要求登录。
+    """
+    headers = dict(auth.DEFAULT_HEADERS)
+    cookie = auth.effective_cookie_str()
+    if cookie:
+        headers["Cookie"] = cookie
+    own_client = client is None
+    client = client or httpx.Client(timeout=_TIMEOUT)
+    try:
+        resp = client.get(URL_VIEW, params={"bvid": bvid}, headers=headers)
+        resp.raise_for_status()
+        data = resp.json()
+    finally:
+        if own_client:
+            client.close()
     if data.get("code") != 0:
         raise ExtractionError(f"视频不存在或已被删除: {data.get('message', '未知错误')}")
     return data.get("data") or {}
